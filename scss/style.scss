@@ -10,11 +10,21 @@ a {
    text-decoration: none;
 }
 
+h1 {
+   z-index: 2; position: fixed; top: 0; left: 0;
+   font-size: 100px;
+}
+
 section {
    width: 100%; position: relative;
 
    &:nth-of-type(1) {
       height: 800px; background: orange;
+
+      .box1 {
+         width: 50px; height: 50px; background: #111;
+         position: absolute; top: 0; right: 0;
+      }
    }
    &:nth-of-type(2) {
       height: 700px; background: hotpink;
